@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <style>
+    body{
+      background-color:lightpink;
+    }
+  .container{
+    background-color: plum;
+    text-align: center;
+    width:40%;
+    height:73vh;
+    margin-left:30%;
+    margin-top:5%;  
+  }
+  
+  h1{
+    color:rgb(0, 26, 255);
+    
+  }
+        .error-message {
+          color: red;
+        }
+        #contact,#name,#email,#age,#designation,#dob{
+          padding:7px;
+          margin:auto;
+
+        }
+
+    #submit{
+          width:15%;
+         padding:10px;
+         background-color: rgba(23, 221, 16, 0.897);
+         color: aliceblue;
+         border-radius:10px;
+         border:none
+        }
+      </style>
+</head>
+
+<body>
+    <script src="example.js"></script>
+    <div class="container">
+    <h1><u>Form Validation</u></h1>
+     <form>
+        <label for="contact">Contact:</label>
+        <input type="tel" placeholder="Enter contact number" name="contact" id="contact">
+        <p id="contact-error" class="error-message"></p>
+  
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Please enter name" name="name" id="name">
+        <p id="name-error" class="error-message"></p>
+  
+        <label for="email">Email:</label>
+        <input type="text" placeholder="Please enter email number" name="email" id="email">
+        <p id="email-error" class="error-message"></p>
+  
+        <label for="age">Age:</label>
+        <input type="text" placeholder="Please enter age" name="age" id="age">
+        <p id="age-error" class="error-message"></p>
+
+        <label for="designation">Designation:</label>
+        <input type="text" placeholder="enter designation" name="designation" id="designation">
+        <p id="designation-error" class="error-message"></p>
+      
+        <label for="files">Files:</label>
+        <input type="file" placeholder="upload files" name="files" id="files" multiple>
+        <p id="files-error" class="error-message"></p>
+
+        <label for="dob">Date Of Birth:</label>
+        <input type="dob" placeholder="dd/mm/yyyy or dd-mm-yyyy " name="dob" id="dob">
+        <p id="dob-error" class="error-message"></p>
+
+        <button id="submit" type="button" onclick="validate()">Submit</button>
+      </form>
+      </div>
+</body>
+</html>
